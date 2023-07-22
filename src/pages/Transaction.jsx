@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import Filter from '../component/Filter';
+import Form from '../component/Form';
 
 function Transaction() {
   const [transactions, setTransactions]=useState([]);
@@ -9,12 +10,12 @@ function Transaction() {
       return res.json();
     })
     .then((data)=>{
-      console.log(data)
       setTransactions(data)
     })
   }, []);
   return (
     <>
+      <Form/>
       {transactions && <Filter data={transactions}/>}
     </>
   )
