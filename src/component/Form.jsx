@@ -25,22 +25,7 @@ function Form() {
 
   }
 
-  const submission = formData.map((data) => (
-    <div className="table-row" key={data.id}>
-      <div className="table-cell">
-        <p>{data.date}</p>
-      </div>
-      <div className="table-cell">
-        <p>{data.description}</p>
-      </div>
-      <div className="table-cell">
-        <p>{data.category}</p>
-      </div>
-      <div className="table-cell">
-        <p>{data.amount}</p>
-      </div>
-    </div>
-  ));
+
 
   return (
     <div>

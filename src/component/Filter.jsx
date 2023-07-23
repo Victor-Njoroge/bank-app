@@ -41,22 +41,22 @@ function Filter({ data }) {
             <p>Amount</p>
           </div>
         </div>
-        {display.map((element) => (
-          <div className="table-row" key={element.id}>
-            <div className="table-cell">
-              <p>{element.date}</p>
-            </div>
-            <div className="table-cell">
-              <p>{element.description}</p>
-            </div>
-            <div className="table-cell">
-              <p>{element.category}</p>
-            </div>
-            <div className="table-cell">
-              <p>{element.amount}</p>
-            </div>
+      {display.map((element)=>(
+        <div className="table-row" key={element.id}>
+          <div className="table-cell">
+            <p>{element.date}</p>
           </div>
-        ))}
+          <div className="table-cell">
+            <p>{element.description}</p>
+          </div>
+          <div className="table-cell">
+            <p>{element.category}</p>
+          </div>
+          <div className="table-cell">
+            <p>{element.amount}</p>
+          </div>
+        </div>
+      ))}
       </div>
     </div>
   );
